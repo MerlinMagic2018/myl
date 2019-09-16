@@ -1,0 +1,23 @@
+/* Lists */
+
+ul, ol, dl      { margin-top: 0; margin-bottom: 1.625em; }
+ul              { list-style-type: disc; }
+ul li           { margin-bottom: .3em; }
+ol              { list-style-type: decimal; list-style-position: outside; }
+ol li           { margin-bottom: .3em; }
+
+/* nested lists */
+ul ul, ul ol, ol ol, ol ul  { margin: .6em 0 .6em 1em; padding-left: 30px; }
+
+/*definition lists*/
+dt              { font-weight: normal; }
+dl dd           { margin: 0 0 .5125em; }
+dialog dd       { margin-bottom: .5em; line-height: normal; }
+ul dl, ol dl    { margin: 0 0 0 .625em; }
+
+
+/* Tables */
+
+table           { border-collapse: collapse; border-spacing: 0; table-layout: fixed; /*margin-bottom: .625em;*/ }
+th summary      { font-weight: normal; margin: 0 0 .625em 0; }
+td, th          { padding: 0; }

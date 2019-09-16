@@ -1,0 +1,184 @@
+
+/* Main global Navigation
+---------------------------------------------- */
+.menu-logo{
+    display: none;
+
+    background-image: url("/assets/img/logos/logo-button-color1.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 50%;
+
+    height: 0;
+    left: 1%;
+    position: absolute;
+    width: 35px;
+
+    top: 50%;
+    transform: translateZ(0) translateY(-50%);
+    transition: all 0.3s ease;
+    opacity: 0; 
+}
+
+
+.navigation-global{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: font-size 300ms;
+
+    & li{
+        margin: 0;
+        padding: 0;
+        }
+    & li:first-child{
+        transition: padding-left 300ms;
+    }
+
+    & a {
+        border-bottom: 1px solid $white;
+        color: $brand-primary;
+        display: block;
+        vertical-align: middle;
+        padding: .7em 5%;
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        }
+
+    & a:hover, a:focus, .is-selected, .current-menu-item a, .current-page-ancestor a{ 
+        background-color: $white; 
+        border-bottom: 1px solid $brand-tertiary; 
+        color: #000; 
+        text-decoration: none; 
+        }
+
+    & a:active{ background-color: #f1f1f1; }
+
+}
+
+
+@media (min-width: 48em) { /* 768px */
+
+    /* Main global Navigation
+    ---------------------------------------------- */
+
+    .navigation-global{
+        border-bottom: 0 none;
+        float: left;
+        width: auto;
+
+        & li{
+            float: left;
+            }
+
+        /* Underline From Center */
+        & a {
+            border-bottom: 0 none;
+            padding: .5em .7em;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            //font-size: 16px;
+            @include rem(font-size, 15px);
+            font-family: $font-reg;
+            }
+        & a:before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 51%;
+            right: 51%;
+            bottom: 0;
+            background: $brand-tertiary;
+            height: 1px;
+            -webkit-transition-property: left, right;
+            transition-property: left, right;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            }
+        & a:hover:before, a:focus:before, a:active:before, .is-selected:before, .current-menu-item a:before, .current-page-ancestor a:before {
+            left: 0;
+            right: 0;
+        }
+        & a:hover, a:focus, .is-selected, .current-menu-item a, .current-page-ancestor a{ 
+            border-bottom: 0 none; 
+        }
+    }
+
+    .is--sticky .navigation-global li:first-child{ padding-left: 1em; }
+
+    .is--sticky .menu-logo{
+        display: block;
+        opacity: 1;
+        height: 35px;
+        }
+
+}
+
+
+//  1024px and up
+@media (min-width: 64em) {
+    
+    /* Main global Navigation
+    ---------------------------------------------- */
+    .navigation-global{
+
+        & a {
+            padding: .5em .8em;
+            }
+    }
+    .is--sticky .navigation-global{ @include rem(font-size, 14px); }
+
+    .is--sticky .navigation-global li:first-child{ padding-left: 0; }
+
+}
+
+//  1280px and up
+@media (min-width: 80em) {
+    
+    /* Main global Navigation
+    ---------------------------------------------- */
+    .navigation-global{
+
+        & a {
+            padding: .8em 1.1em;
+            //font-size: 16px;
+            //font-family: $font-semibold;
+            @include rem(font-size, 18px);
+            }
+        & a:before{
+            
+            height: 3px;
+            
+            }
+    }
+    
+}
+
+// 1440 and up
+@media (min-width: 90em) {
+    
+    /* Main global Navigation
+    ---------------------------------------------- */
+
+}
+
+// 1600 and up
+@media (min-width: 100em) {
+    
+    /* Main global Navigation
+    ---------------------------------------------- */
+    
+}
+
+// 2100 and up
+@media (min-width: 131.25em) {
+    
+    /* Main global Navigation
+    ---------------------------------------------- */
+    
+}

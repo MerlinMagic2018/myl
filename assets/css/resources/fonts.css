@@ -1,0 +1,62 @@
+/*@font-face{ 
+	font-family: 'light'; 
+	src: url("http://dev.madeyoulook/style-guide/media/fonts/opensans-light/font-OpenSans.eot"); 
+	src: url("http://dev.madeyoulook/style-guide/media/fonts/opensans-light/font-OpenSans.eot?#iefix") format('embedded-opentype'), 
+	url("http://dev.madeyoulook/style-guide/media/fonts/opensans-light/font-OpenSans.woff") format('woff'), 
+	url("http://dev.madeyoulook/style-guide/media/fonts/opensans-light/font-OpenSans.svg#webfont") format('svg'); 
+	}*/
+
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/opensans-light/os-light.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('/assets/fonts/opensans-light/os-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/opensans-light/os-light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/opensans-light/os-light.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/opensans-light/os-light.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/opensans-light/os-light.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-300italic - latin */
+@font-face {
+  font-family: 'lightitalic';
+  font-style: italic;
+  font-weight: 300;
+  src: url('/assets/fonts/opensans-light/os-light-italic.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'),
+       url('/assets/fonts/opensans-light/os-light-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/opensans-light/os-light-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/opensans-light/os-light-italic.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/opensans-light/os-light-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/opensans-light/os-light-italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url("/assets/fonts/opensans-regular/font-OpenSans.eot");
+    src: url("/assets/fonts/opensans-regular/font-OpenSans.eot?#iefix") format('embedded-opentype'),
+      url("/assets/fonts/opensans-regular/font-OpenSans.woff") format('woff'),
+      url("/assets/fonts/opensans-regular/font-OpenSans.svg#open_sansregular") format('svg');
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'semibold';
+    src: url("/assets/fonts/opensans-semibold/font-OpenSans.eot");
+    src: url("/assets/fonts/opensans-semibold/font-OpenSans.eot?#iefix") format('embedded-opentype'),
+         url("/assets/fonts/opensans-semibold/font-OpenSans.woff") format('woff'),
+         url("/assets/fonts/opensans-semibold/font-OpenSans.svg#open_sanssemibold") format('svg');
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'bold';
+    src: url("/assets/fonts/opensans-bold/font-OpenSans.eot");
+    src: url("/assets/fonts/opensans-bold/font-OpenSans.eot?#iefix") format('embedded-opentype'),
+         url("/assets/fonts/opensans-bold/font-OpenSans.woff") format('woff'),
+         url("/assets/fonts/opensans-bold/font-OpenSans.svg#open_sansbold") format('svg');
+    font-style: normal;
+    }

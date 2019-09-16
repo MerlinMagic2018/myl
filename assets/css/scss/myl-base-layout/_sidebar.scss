@@ -1,0 +1,103 @@
+
+//  Global aside
+.aside{
+	@include rem(font-size, 14px);
+}
+
+
+/* Asides and Sidebars
+---------------------------------------------- */
+.aside{ 
+    background-color: $brand-primary-alt3;
+    padding-top: 2em;
+    //width: 100%;
+    }
+
+// aside content wrapper
+.aside--region{
+    border-bottom: 1px solid $brand-primary-alt;
+    padding-bottom: 1.3em;
+    margin-bottom: 1.3em;
+    }
+    .aside--region:last-child{
+        border-bottom: 0 none;
+        }
+
+
+
+
+
+.aside--designers{}
+.aside--general{}
+.aside--products{}
+
+
+// 480px and up
+@media (min-width: 30em) {
+	
+	.aside--region{ width: 45%; }
+	.aside--region:nth-child(odd){ float: left; }
+	.aside--region:nth-child(odd){ float: right; }
+
+} // E: MQ
+
+// 600px and up
+@media (min-width: 37.5em) {
+	
+	
+
+} // E: MQ
+
+
+// 768px and up
+@media (min-width: 48em) {
+
+} // E: MQ
+
+
+// 920px and up
+@media (min-width: 57.500em) {
+
+
+} // E: MQ
+
+
+//  1024px and up
+@media (min-width: 64em) {
+	
+	.aside--region{ width: 100%; }
+	.aside--region:nth-child(odd){ float: none; }
+	.aside--region:nth-child(odd){ float: none; }
+
+} // E: MQ
+
+
+//  1280px and up
+@media (min-width: 80em) {
+	
+	.aside{}
+
+	.aside--region{}
+
+} // E: MQ
+
+
+// 1440 and up
+@media (min-width: 90em) {
+
+
+} // E: MQ
+
+
+// 1600 and up
+@media (min-width: 100em) {
+
+
+} // E: MQ
+
+
+// 2100 and up
+@media (min-width: 131.25em) {
+
+
+} // E: MQ

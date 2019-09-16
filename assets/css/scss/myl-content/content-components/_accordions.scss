@@ -1,0 +1,167 @@
+/* Accordions - FAQ Page
+---------------------------------------------- */
+
+.article--content{
+
+    p + h3.accordion{ padding-top: 0; }
+
+    }
+
+.accordion-grouping{
+    margin-bottom: 3em;
+    }
+
+.accordions{
+    border-bottom: solid 1px #eee; 
+
+    h3{ font-family: $font-reg; @include rem(font-size, 16px); }
+
+    .accordion{
+        transform: translateZ(0);
+        transition: 0.4s;
+        margin-bottom: 0;
+        @include rem(font-size, 16px);
+        }
+
+    .accordion-trigger{
+        padding: .8em .8em .8em 2.5em;
+        display: block;
+        line-height: 1.25;
+        }
+
+    .active, .accordion:hover{
+        background-color: $brand-primary-alt3;
+        }
+
+    .accordion-trigger:before{
+        content: '\25bc';
+        @include rem(font-size, 12px);
+        color: $border-color-ul;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: 3px;
+        //top: 22px;
+        top: 32%;
+        border: 1px solid $border-color-ul;
+        border-radius: 50%;
+        line-height: 1.25;
+        padding: 4px;
+        text-align: center;
+        }
+
+    .active .accordion-trigger:before{
+        content: "\25b2";
+        color: #f1b33b;
+        border-color: #f1b33b;
+        }
+
+    .panel{
+        margin-bottom: 0;
+        max-height: 0;
+        transform: translateZ(0);
+        transition: 0.34s ease-in-out;
+        opacity: 0;
+        }
+    .panel--pad{ display: block; padding: 1.2em 1.2em 1.8em 2.5em; }
+
+    .panel.show{
+        opacity: 1;
+        max-height: 999px;
+        }
+
+    .panel.hide{
+        opacity: 0;
+        height: 0;
+        } 
+
+}
+
+
+// 600px and up
+@media (min-width: 37.5em) {
+
+} // E: MQ
+
+
+// 768px and up
+@media (min-width: 48em) {
+
+    .accordions{
+
+        .accordion{
+            @include rem(font-size, 18px);
+            }
+
+        .accordion-trigger:before{
+            width: 14px;
+            height: 14px;
+            left: 5px;
+        }   
+    }
+
+} // E: MQ
+
+
+// 920px and up
+@media (min-width: 57.500em) {
+
+} // E: MQ
+
+
+//  1024px and up
+@media (min-width: 64em) {
+
+} // E: MQ
+
+
+//  1280px and up
+@media (min-width: 80em) {
+
+    .accordions{
+
+        .accordion-trigger:before{
+            width: 16px;
+            height: 16px;
+            left: 10px;
+            }
+    }
+
+} // E: MQ
+
+
+// 1440 and up
+@media (min-width: 90em) {
+
+    .accordions{
+
+        .accordion{ 
+            @include rem(font-size, 20px);
+            }
+
+        .accordion-trigger{
+            line-height: 1.5;
+            }
+
+        .accordion-trigger:before{
+            @include rem(font-size, 14px);
+            }
+
+        .accordion-trigger:before{
+            top: 30%;
+            }
+    }
+
+} // E: MQ
+
+
+// 1600 and up
+@media (min-width: 100em) {
+
+} // E: MQ
+
+
+// 2100 and up
+@media (min-width: 131.25em) {
+
+} // E: MQ

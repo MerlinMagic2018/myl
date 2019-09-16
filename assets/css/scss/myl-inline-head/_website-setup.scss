@@ -1,0 +1,41 @@
+/* 1.1 Browser and Document setup / nomalize */
+
+	:root{
+		background-color: #fff;
+		color: $body-color;
+		}
+	html{ 
+		font-family: $font-default;
+		font-size: 1rem;
+		line-height: 1.25;
+		min-height: 100%;
+	    -webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+		text-rendering: optimizeLegibility;
+		-webkit-overflow-scrolling: touch;
+		//-webkit-tap-highlight-color: #ddd;
+		}
+	body {
+		min-height: 100%;
+		position: relative;
+		z-index: 0; 
+		-webkit-font-smoothing: antialiased;
+		}
+
+	body, object, iframe, article, aside, details, figcaption, figure, footer, header, nav, section, summary, form, fieldset, legend, button, input, optgroup, select, textarea{ margin: 0; padding: 0; }
+
+	html, div, article, aside, footer, header, main, menu, nav, section, summary, ul, ol, li, dl, dt, dd, hr, form, fieldset, legend, input, .text-field, button, select, textarea { box-sizing: border-box; }
+	
+	/* Html5 structure
+	---------------------------------------------- */
+	article, aside, details, figcaption, figure, footer, header, main, nav, section, summary{ display:block; }
+
+	audio, canvas, video	{ display: inline-block; } 
+	audio:not([controls])	{ display: none; }
+	[hidden], template		{ display: none; }
+
+	
+/* 1.2 Global importants */
+    /* Clear fix */
+    .cf:before, .cf:after   { content:""; display:table; }
+    .cf:after               { clear:both; }

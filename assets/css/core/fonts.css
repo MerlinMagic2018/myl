@@ -1,0 +1,40 @@
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'light';
+  font-style: normal;
+  src: local("Open Sans Light"), local("/assets/fonts/opensans-Light"), url("/assets/fonts/opensans-light/os-light.woff2") format("woff2"), url("/assets/fonts/opensans-light/os-light.woff") format("woff"), url("/assets/fonts/opensans-light/os-light.ttf") format("truetype"), url("/assets/fonts/opensans-light/os-light.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+  font-display: swap; }
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'regular';
+  font-style: normal;
+  src: local("Open Sans Regular"), local("/assets/fonts/opensans-Regular"), url("/assets/fonts/opensans-regular/os-regular.woff2") format("woff2"), url("/assets/fonts/opensans-regular/os-regular.woff") format("woff"), url("/assets/fonts/opensans-regular/os-regular.ttf") format("truetype"), url("/assets/fonts/opensans-regular/os-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+  font-display: swap; }
+
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'semibold';
+  font-style: normal;
+  src: local("Open Sans SemiBold"), local("/assets/fonts/opensans-SemiBold"), url("/assets/fonts/opensans-semibold/os-semibold.woff2") format("woff2"), url("/assets/fonts/opensans-semibold/os-semibold.woff") format("woff"), url("/assets/fonts/opensans-semibold/os-semibold.ttf") format("truetype"), url("/assets/fonts/opensans-semibold/os-semibold.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+  font-display: swap; }
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'bold';
+  font-style: normal;
+  src: local("Open Sans Bold"), local("/assets/fonts/opensans-Bold"), url("/assets/fonts/opensans-bold/os-bold.woff2") format("woff2"), url("/assets/fonts/opensans-bold/os-bold.woff") format("woff"), url("/assets/fonts/opensans-bold/os-bold.ttf") format("truetype"), url("/assets/fonts/opensans-bold/os-bold.svg#OpenSans") format("svg");
+  font-display: swap; }
+
+/* SD Georgia  - latin */
+@font-face {
+  font-family: 'georgia';
+  font-style: normal;
+  /*font-weight: 700;*/
+  src: local("SD Georgia"), local("/assets/fonts/sd-goergia"), url("/assets/fonts/sd-goergia/sd-goergia.woff2") format("woff2"), url("/assets/fonts/sd-goergia/sd-goergia.woff") format("woff"), url("/assets/fonts/sd-goergia/sd-goergia.ttf") format("truetype"), url("/assets/fonts/sd-goergia/sd-goergia.svg#sd_georgia_lightregular") format("svg");
+  font-display: swap; }
+
+/* test */

@@ -1,0 +1,239 @@
+/* Global Setup
+    ---------------------------------------------- */
+    div, header, footer, aside, nav, section, article, main{ overflow: hidden; position: relative; }
+
+    /* Fluid wrapper for main content - identical to site wrapper - fine grained adjustments for responsive breakpoints */
+    .fluid{
+        margin: 0 auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        }
+        
+    // .site-wrapper{
+    //     margin: 0 auto;
+    //     padding-left: 3%;
+    //     padding-right: 3%;
+    //     width: 100%;
+    //     max-width: 80%;
+    //     }
+
+    /* all purpose wrapper - used for blocks of content */
+    .region{ width: 100%; }
+    
+    /* all purpose wrapper */
+    .content-wrapper{
+        overflow: hidden;
+        padding-bottom: 1em;
+        width: 100%;
+        }
+    
+    /* to push the site layout right upon showing Popular Tags on 1260 view */ 
+    .push-layout{}
+    
+    /*.no-ws{ display:none; }*/
+
+
+
+
+/* Body Content
+---------------------------------------------- */
+.enhanced .body-home{
+    padding-top: 4.5em;
+    }
+
+.enhanced .inner-content{
+    padding-top: 3.2em;
+    }
+
+
+/* Templates Columns Set up
+---------------------------------------------- */
+.supplementary{
+    background-color: red;
+    margin-bottom: 1em;
+    padding: 0 5% 1em;
+    }
+
+// default main content - align left on large screens
+.main-content{
+    margin-bottom: 1em;
+    padding: .5em 5% 0;
+    width: 100%;
+    }
+
+.main-content--general{
+
+}
+
+.main-content--catalogue{
+    margin-bottom: 1em;
+    padding: 0;
+    width: 100%;
+    }
+
+// default main content - full width
+.main-content--full-width{
+    //padding-top: 2em;
+    padding-bottom: 0;
+    width: 100%;
+    }
+
+.has--standard-pad{
+    padding-top: 1.5em;
+    }
+
+// Aside general - Right Column
+.aside{
+    padding: 0 2% 1em;
+    width: 100%;
+    }
+
+// Left Column
+.supplementary-content{
+    background-color: #eee;
+    width: 100%;
+    margin-bottom: 1.5em;
+    // margin-right: 2%;
+    //margin-top: 2.7em;
+    }
+
+
+.general-supplementary{}
+.supplementary-wrapper{
+    padding-top: 2em;
+    width: 100%;
+    }
+
+
+
+/* $ Enhanced - media queries
+====================================================================== */
+
+// 768px and up
+@media (min-width: 48em) { /* 768px */
+    .fluid{
+        padding-left: 3%;
+        padding-right: 3%;
+        }
+
+    /* Body Content
+    ---------------------------------------------- */
+    // .enhanced .body-home{
+    //     padding-top: 4.5em;
+    //     }
+    .enhanced .inner-content, .enhanced .body-home{
+        padding-top: 9.2em;
+        }
+
+    .main-content{ padding: 0 0 1.5em; }
+    //.main-content--catalogue{ padding: 1em 0; }
+    .main-content{
+        float: left;
+        width: 70%;
+        }
+
+    /* Aside
+    ---------------------------------------------- */
+    
+
+
+}
+
+//  1024px and up
+@media (min-width: 64em) {
+    // .fluid{
+    //     padding-left: 5%;
+    //     padding-right: 5%;
+    //     }
+    .main-content--catalogue{
+        width: 70%;
+        float: left;
+        }
+
+    .supplementary-wrapper{
+        //padding-top: 2em;
+        width: 70%;
+        float: left;
+        }
+    
+    .main-content--general{
+        float: left;
+        width: 70%;
+    }
+    .aside{
+        float: right;
+        width: 25%;
+        }
+}
+
+
+//  1280px and up
+@media (min-width: 80em) {
+/* Body Content
+    ---------------------------------------------- */
+    .enhanced .inner-content, .enhanced .body-home{
+        padding-top: 11em;
+        }
+    .main-content{ padding-top: 3em; }
+
+    .main-content--full-width{
+        //padding-top: 3em;
+        //padding-bottom: 2.5em;
+        }
+    .has--standard-pad{
+        padding-top: 3em;
+        }
+    //.main-content--catalogue{ padding: 2.5em 0; }
+    
+    
+
+}
+
+
+// 1440 and up
+@media (min-width: 90em) {
+    .fluid{
+        max-width: 95%;
+        }
+
+    .main-content--catalogue{
+        width: 57%;
+        }
+
+    .supplementary-content{
+        //background-color: #eee;
+        width: 18%;
+        margin-right: 2%;
+        //margin-top: 2.7em;
+        }
+    .aside{
+        float: right;
+        width: 20%;
+        }
+}
+
+// 1600 and up
+@media (min-width: 100em) {
+    // .fluid{
+    //     max-width: 90%;
+    //     }
+
+    /* Body Content
+    ---------------------------------------------- */
+    .enhanced .inner-content{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        }
+
+    /* Aside
+    ---------------------------------------------- */
+    
+}
+
+// 2100 and up
+@media (min-width: 131.25em) {
+    // .fluid{
+    //     max-width: 85%;
+    //     }
+}

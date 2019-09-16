@@ -1,0 +1,128 @@
+/* List - No Bullets
+---------------------------------------------- */
+/* Header */
+.glossary-header{
+    margin-bottom: 1em; 
+
+    .search-form{
+        z-index: 0;
+    }
+
+    .glossary-list-label{
+        float: left;
+        margin-right: .4em;
+        font-family: $font-light; @include rem(font-size, 16px);
+        padding-top: .3em;
+    }
+
+    .glossary-list{
+        //float: left;
+        margin-bottom: .5em;
+        
+        li{ margin-right: .3em; }
+        li:first-child{ margin-right: 1em; }
+
+        .glossary-list--item{
+            border: 1px solid #e6e6e6;
+            display: block;
+            padding: .3em .5em;
+            text-decoration: none;
+        }
+        .glossary-list--item:hover, .glossary-list--item:focus{
+            background-color: #E1F7FB;
+            border: 1px solid #c6c6c6;
+        }
+        .glossary-list--is-active{
+            border: 1px solid $brand-primary;
+            background-color: #E1F7FB;
+            cursor: pointer;
+            pointer-events: none;
+        }
+
+    }
+
+    .fancy-select{
+        margin-bottom: .8em;
+    }
+
+}
+
+/* Glossary Item */
+.item--glosaary{
+    border-bottom: dotted 1px $brand-primary-alt2;
+    margin-bottom: 1em;
+    }
+
+
+// 600px and up
+@media (min-width: 37.5em) {
+
+    .search-form-general{
+            width: 50%;
+            float: right;
+            margin-top: 0;
+        }
+
+}
+
+
+// 768px and up
+@media (min-width: 48em) {
+
+    /* Header */
+    .glossary-header{
+        margin-bottom: 1em;
+
+        .glossary-list{
+            float: left;
+            }
+
+        .fancy-select{
+            margin-bottom: .8em;
+            float: left;
+            }
+    }
+
+}
+
+
+// 920px and up
+@media (min-width: 57.500em) {
+
+
+}
+
+
+//  1024px and up
+@media (min-width: 64em) {
+
+
+}
+
+
+//  1280px and up
+@media (min-width: 80em) {
+
+
+}
+
+
+// 1440 and up
+@media (min-width: 90em) {
+
+
+}
+
+
+// 1600 and up
+@media (min-width: 100em) {
+
+
+}
+
+
+// 2100 and up
+@media (min-width: 131.25em) {
+
+
+}

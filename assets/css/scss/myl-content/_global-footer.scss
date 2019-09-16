@@ -1,0 +1,260 @@
+/* Footer General
+---------------------------------------------- */
+/* Global Footers
+---------------------------------------------- */
+.global-footer{
+    background: rgb(6,67,91); /* Old browsers */
+    background: linear-gradient(to bottom, rgba(6,67,91,1) 54%,rgba(2,26,35,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    font-family: $font-light;
+    padding: 2em 0 1em;
+    // margin-top: 1em;
+    }
+
+.brand-footer{
+    background: url("/assets/img/bg/bg-ring-sketch.png") no-repeat 50% bottom;
+    background-size: 240px auto;
+    color: #b4b4b4;
+    @include rem(font-size, 14px);
+    letter-spacing: .04em;
+    line-height: 1.35;
+    }
+
+.footer--heading{
+    color: #fff;
+    font-size: 16px;
+    }
+
+.copyright{ @include rem(font-size, 11px); margin-bottom: 0; padding-top: 2em; text-align: center; }
+
+
+/* Footer Structure
+---------------------------------------------- */
+.brand-footer{
+
+    .span-1{
+        width: 45%;
+        }
+    .span-2{
+        width: 100%;
+        }
+}
+
+/* Footer About
+---------------------------------------------- */
+.footer-logo{
+    background: url("/assets/img/logos/logo-global-white.svg") no-repeat 50% 0;
+    height: auto;
+    margin-bottom: 2em;
+    padding-bottom: 30%;
+    width: 100%;
+    }
+.footer-excerpt{
+    @include rem(font-size, 14px);
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px dotted #7baeb7;
+    }
+
+
+/* Footer Location
+---------------------------------------------- */
+.footer--location{
+    border-bottom: 1px dotted #7baeb7;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+
+    p{ margin-bottom: .1em; }
+
+}
+
+.hours--footer{
+    padding-bottom: 1.875em;
+
+    .sizes-SM{
+        color: $white;
+        }
+    }
+
+
+/* Footer Lists
+---------------------------------------------- */
+.footer-lists{
+
+    margin-bottom: 2em;
+
+    a{
+        display: block;
+        }
+    a:active, a:focus{
+        background-color: #12374c;
+        }
+}
+
+
+/* Footer Social
+---------------------------------------------- */
+.brand-footer{
+
+    .footer-social{
+        margin-bottom: 1.5em;
+        padding-bottom: 1.5em;
+        border-bottom: 1px dotted #7baeb7;
+        }
+
+    a{ color: #7baeb7; }
+
+}
+
+.footer-social{
+
+    .is-circle{
+        background-color: #043142;
+
+        & :hover{
+            background-color: $brand-primary-alt;
+            }
+
+        .ico.i--fb{
+            background-size: auto 60%;
+            }
+    }
+    .is-circle:focus, .is-circle:active{
+        background-color: $brand-primary-alt;
+        }
+}
+
+
+@media (min-width: 48em) { /* 768px */
+
+    /* Footer About
+    ---------------------------------------------- */
+    .footer-logo{
+        margin-bottom: 1em;
+        float: left;
+        padding-bottom: 18%;
+        width: 40%;
+        }
+    .footer-excerpt{
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        border-bottom: 0 none;
+
+        float: right;
+        width: 51%;
+        }
+    .tagline{
+        float: right;
+        width: 51%;
+        }
+
+    /* Footer Location
+    ---------------------------------------------- */
+    .footer--location{
+        border-bottom: 0 none;
+        border-right: 1px dotted #7baeb7;
+        float: left;
+        padding-right: 1.875em;
+        width: 45%;
+        }
+
+    .hours--footer{
+        padding-left: 5em;
+        }
+
+}
+
+
+//  1024px and up
+@media (min-width: 64em) {
+
+    /* Footer Structure
+    ---------------------------------------------- */
+    .brand-footer{
+
+        .span-1{
+            width: 14.0625%;
+            }
+        .span-2{
+            width: 31.25%;
+            }
+
+        .span-1:first-of-type{
+            padding-left: 3%;
+        }
+    }
+
+    /* Footer About
+    ---------------------------------------------- */
+    .footer-logo, .footer-excerpt, .tagline{
+        float: none;
+        width: 100%;
+        }
+    .footer-logo{
+        padding-bottom: 40%;
+        margin-bottom: 2em;
+        }
+    .footer-excerpt{
+        margin-bottom: 0;
+        }
+
+    /* Footer Location
+    ---------------------------------------------- */
+    .footer--location{
+        border-right: 0 none;
+        border-bottom: 1px dotted #7baeb7;
+        float: none;
+        width: 100%;
+        }
+    .hours--footer{
+        padding: 0;
+        }
+
+}
+
+
+//  1280px and up
+@media (min-width: 80em) {
+    
+    /* Footer Location
+    ---------------------------------------------- */
+    .footer--location{
+        border-bottom: 0 none;
+        float: left;
+        padding: 0 1.875em 0 0;
+        margin: 0;
+        width: auto;
+    }
+    .hours--footer{
+        border-left: 1px dotted #7baeb7;
+        padding-left: 1.875em;
+        padding-bottom: 0;
+        }
+
+
+    /* Footer Social
+    ---------------------------------------------- */
+    .brand-footer{
+
+        .footer-social{
+            margin-bottom: 2.5em;
+            padding-bottom: 0;
+            border-bottom: 0 none;
+        }
+    }
+    
+}
+
+// 1440 and up
+@media (min-width: 90em) {
+    
+}
+
+// 1600 and up
+@media (min-width: 100em) {
+    
+}
+
+// 2100 and up
+@media (min-width: 131.25em) {
+    
+}

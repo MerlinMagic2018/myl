@@ -1,0 +1,470 @@
+/* Standard Hero wrapper
+---------------------------------------------- */
+.development .hero{
+    //background-color: lime;
+    border-bottom: 1px solid #000;
+}
+
+.hero{
+    overflow: visible;
+}
+
+.hero-standard{
+    padding: 2em 0;
+    width: 100%;
+    }
+
+// Solid background
+.has-bg--solid{
+    background-color: #f8f8f8;
+    }
+// Alternate solid background
+.has-bg--solid-alt{
+    background-color: #dafcff;
+    }
+
+// Gradient Background
+.has-bg--gradient{
+    background: rgb(248,248,248); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(248,248,248) 0%, rgb(233,233,233) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(248,248,248) 0%,rgb(233,233,233) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(248,248,248) 0%,rgb(233,233,233) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+// Alternate gradient background
+.has-bg--gradient-alt{
+
+    }
+
+// Solid background with dots
+.has-bg-solid--dots{
+
+    }
+// Alternate Solid background with dots
+.has-bg-solid--dots-alt{
+
+    }
+
+
+// .has-bg-gradient--dots::before{
+//     content:"";
+//     height: 4px;
+//     background-color: gold;
+// }
+
+$oT: rgba(255,128,0,0); // hsla(32,100%,50%,0)
+$o: rgb(255,128,0); // hsl(32,100%,50%)
+
+// Gradient Background with dots
+
+
+// .has-bg-gradient--dots:before{
+//     background: url("/assets/img/bg/circle-light-grey.svg") repeat-x 0 0;
+
+//     content:"";
+//     height: 22px;
+//     width: 100%;
+//     display: block;
+//     position: absolute;
+//     z-index: 10000;
+//     top: -11px;
+
+//     //box-shadow: 0px -6px 20px -7px rgba(0,0,0,0.6);
+// }
+
+.has-bg-gradient--dots{
+    //box-shadow: 0 -3px 25px 0px rgba(0, 0, 0, 0.3);
+    //width: 100%;
+    //height: 400px;
+    //background: rgba(248,248,248,1); /* Old browsers */
+    //background: url("/assets/img/bg/circle-light-grey.svg") repeat-x 0 -11px;
+    //background-size: 22px auto;
+
+    //background-image: linear-gradient(to bottom, rgb(245,245,245) 0%,rgb(222,222,222) 100%);
+    //background: linear-gradient(to bottom, rgba(248,248,248,1) 0%, rgba(233,233,233,1) 100%);
+    //background-image: radial-gradient(22px 22px at 50% 0, $o 49%, $oT 50%),
+    
+
+    //background: rgb(245,245,245); /* Old browsers */
+    //background: -moz-linear-gradient(top, rgb(245,245,245) 0%, rgb(222,222,222) 100%); /* FF3.6-15 */
+    //background: -webkit-linear-gradient(top, rgb(245,245,245) 0%,rgb(222,222,222) 100%); /* Chrome10-25,Safari5.1-6 */
+    //background: linear-gradient(to bottom, rgb(245,245,245) 0%,rgb(222,222,222) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    //content:"";
+
+    background: rgb(255,255,255);
+    background-image: url("/assets/img/bg/circle-light-grey.svg"), linear-gradient(180deg, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(250,250,250,1) 50%, rgba(234,234,234,1) 100%);
+
+    background-size: 30px auto;
+    background-repeat: repeat-x;
+    background-position: 0 49%;
+
+    //position: relative;
+    min-height: 300px;
+    //height: 22px;
+    //height: 100%;
+
+    //z-index: 10000;
+
+    
+    // background-repeat: repeat-x,
+    //     no-repeat;
+    // background-position: 0 top,
+    //     right;
+    // background-size: 22px auto,
+    // auto auto;
+
+    //overflow: visible !important;
+    //padding-top: 11px;
+
+    // background: 
+    // /* top, transparent red */ 
+    // linear-gradient(
+    //   rgba(255, 0, 0, 0.45), 
+    //   rgba(255, 0, 0, 0.45)
+    // ),
+    /* bottom, image */
+    //url("/assets/img/i/bg/circle-light-grey.svg");
+    // background-attachment: fixed, fixed;
+    // background-position: center, center;
+    // background-repeat: no-repeat, no-repeat;
+    // background-size: cover, cover;
+    }
+// Alternate Gradient Background with dots
+
+
+
+.has-bg-gradient--dots-alt{
+
+    }
+
+// .hero-basic{
+//     padding: 2em 0;
+//     //text-align: center;
+//     width: 100%;
+//     z-index: 3;
+//     }
+// .hero-enhance{
+//     color: #fff;
+//     padding: 3em 0;
+//     width: 100%;
+//     z-index: 3;
+//     }
+
+// .useless-layout-wrapper{ margin-left: auto; margin-right: auto; }
+
+// .useless-layout1{ margin-left: auto; margin-right: auto; width: 80%; }
+
+// .basic-hero{
+//     background-color: #fff;
+//     padding: .5em 0px;
+//     z-index: 3;
+//     }
+
+
+/* Hero - Welcome
+---------------------------------------------- */
+//.no-touch .hero-1{ background-color: #222; }
+//.no-touch .hero-welcome, .no-js .hero-welcome{ background: #000 asset-url("bg/hero1-fallback.jpg") no-repeat 50% 0; background-size: 100% auto; }
+//.hero-1{ background: #000 asset-url("bg/hero1-fallback.jpg") no-repeat 50% 0; background-size: 100% auto; }
+
+
+.hero-welcome   { padding-bottom: 0 !important; }
+.welcome-bg     { background-color: #222; }
+
+
+.hero-welcome-alt .app-downloads .sizes-L{ @include rem(font-size, 26px); }
+
+//.hero-welcome .useless-layout-wrapper{ width: 80%; }
+
+.hero-1-devices { margin-top: 4em; }
+.hero-device    { background-repeat: no-repeat; background-position: 0 0; }
+
+
+// devices layouts
+.hero--device1{ z-index: 5; position: absolute; left: 0; bottom: 0; }
+.hero--device2{ z-index: 6; }
+//.fade-layer{ opacity: .3; }
+.hero--device3{ z-index: 7; position: absolute; right: 0; bottom: 0; }
+.hero--device3.shift-layer{ z-index: 5; }
+
+
+// device images
+// .hero--device1{ background-image: asset-url("bg/hero1-tablet-s.png"); }
+// .hero--device2{ background-size: 100% auto; background-image: asset-url("bg/empty_hero1-laptop-lg.png"); }
+// .hero--device3{ background-size: 100% auto; background-image: asset-url("bg/empty_hero1-phone-lg.png"); }
+
+
+// screen images
+// .hero-device1-screen{ background: transparent asset-url("bg/hero1-tablet-screen-s.jpg") no-repeat 0 0; }
+// .hero-device2-screen{ background: #fff asset-url("bg/hero1-laptop-screen.jpg") no-repeat 0 0; background-size: 100% auto; }
+
+
+// screen layouts
+.hero-device1-screen { position: absolute; }
+.hero-device2-screen { height: 100%; width: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+.hero-device3-screen { position: absolute; }
+
+
+// container for laptop video wrapper
+.hero-device2-container{ background-color: #000; height: 0; padding-bottom: 65.5%; width: 100%; }
+
+
+// .no-touch #bg-video{
+//     position: absolute;
+//     width: 100%;
+//     top: 95px;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); -webkit-transform: translateZ(0); transform: translateZ(0);
+//     object-fit: cover;
+//     z-index: 1;
+//     }
+// .no-touch .bg-video-overlay{
+//     background-color: #000;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     opacity: .8;
+//     z-index: 2;
+//     }
+// .touch #bg-video, .touch .bg-video-overlay{ display: none; }
+
+
+
+/* BG IMG -- min width 320PX ++
+---------------------------------------------- */
+//@media (min-width: 20em) { /* 320PX */
+    // .hero-1-devices { margin-top: 2em; }
+
+    // // 3 devices layout
+    // .hero--device1  { display: none; }
+    // .hero--device2  { padding: 3% 13% 4% 13%; width: 100%; }
+    // .hero--device3  { display: none; }
+    
+
+    // 3 devices screens layout
+    // .hero-device1-screen{ height: 318px; width: 422px; position: absolute; left: 49px; top: 26px; }
+    //.hero-device2-screen{ height: 100%; width: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+    //.hero-device3-screen{ height: 316px; width: 188px; position: absolute; right: 16px; top: 42px; }
+    
+//}
+
+/* MQ 768- tablets & small screens
+================================================================================ */
+//@media (min-width:48em){
+
+    // 3 devices layout
+    // .hero--device1{ height: 345px; width: 514px; }
+    //.hero--device2  { padding: 3% 11% 2.3%; width: 90%; }
+    //.hero--device3  { display: block; height: 257px; width: 220px; }
+
+    // 3 devices BG's
+    // .hero--device1   { background-image: asset-url("bg/hero1-tablet.png"); }
+    // .hero--device2   { background-size: 100% auto; background-image: asset-url("bg/empty_hero1-laptop.png"); }
+    //.hero--device3    { background-image: asset-url("bg/empty_hero1-phone.png"); }
+
+    //.hero-device2-container{ background-color: teal; height: 0; padding-bottom: 65.5%; width: 100%; }
+
+    // 3 devices screen IMG's
+    // .hero-device1-screen { height: 318px; width: 422px; position: absolute; left: 49px; top: 26px; }
+    // .hero-device2-screen { height: 100%; width: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+    //.hero-device3-screen  { height: 226px; width: 135px; right: 11px; top: 30px; }
+
+//}
+
+/* BG IMG -- min width 980px ++
+---------------------------------------------- */
+//@media (min-width: 61.25em) {
+    // // .hero-1-devices { margin-top: 4em; }
+
+    // // 3 devices layout
+    // .hero--device1  { display: block; height: 345px; width: 514px; }
+    // //.hero--device2{ height: 450px; width: 813px; z-index: 6; margin: 0 7.8% 0 auto; }
+    // .hero--device2  { padding: 2% 10% 2.5% 10%; width: 83%; margin: 0 7.8% 0 auto; }
+    // .hero--device3  { height: 358px; width: 307px; }
+
+    // // 3 devices screen IMG's
+    // .hero-device1-screen    { height: 318px; width: 422px; left: 49px; top: 26px; }
+    // //.hero-device2-screen  { height: 385px; width: 590px; position: absolute; left: 115px; top: 28px; }
+    // .hero-device3-screen  { height: 316px; width: 188px; position: absolute; right: 16px; top: 42px; } 
+    
+//}
+
+
+
+
+
+
+/* BG colours 
+    #fff
+    #f1f1f1
+
+*/
+
+
+
+
+/* Hero - Subscribe and Purchase
+---------------------------------------------- */
+.hero-subscribe{ background-color: #fff; padding-top: 0; }
+//.hero-subscribe .fancy-promos-2{ margin-top: 2em; }
+.hero-subscribe.is--signedin{ padding-top: 2em; }
+
+
+
+/* Hero - Upgrade Rogers
+---------------------------------------------- */
+.hero-upgrade{ background-color: #fff; padding-bottom: 1em; }
+
+
+
+
+/* Hero - Carousel
+---------------------------------------------- */
+.hero-rotator{ 
+    background: #f1f1f1; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #e2e2e2 0%, #f1f1f1 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#e2e2e2), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #e2e2e2 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #e2e2e2 0%,#f1f1f1 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #e2e2e2 0%,#f1f1f1 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #e2e2e2 0%,#f1f1f1 100%); /* W3C */
+
+    padding: 2em 0;
+    z-index: 10;
+    }
+
+.is--relative { position: relative; }
+.is--absolute{ position: absolute; }
+
+// .hide-bg{
+//     background: #000 !important;
+//     }
+
+// Flex Slider Modifications
+.slider, .flexslider{ overflow: visible; }
+.slider{ padding-top: 1em; }
+.flexslider .slide{ padding-top: 1.5em; margin-bottom: 0; }
+
+// .slide{}
+// .slide-1{}
+
+// [lang="en-ca"] .slide-1 .slide-content{ background: transparent asset-url("bg/hero-rotator-laptop.png") no-repeat 50% 0; background-size: 99% auto; }
+// [lang="fr-ca"] .slide-1 .slide-content{ background: #fff asset-url("bg/hero1-phone-screen-fr.gif") no-repeat 0 0; background-size: 100% auto; }
+
+
+/* Carousel - Combined styles
+----------------------- */
+
+.slide-content{
+    min-height: 565px;
+    }
+
+.slide-2 .slide-content, .slide-3 .slide-content{
+    margin: 0 auto;
+    width: 100%;
+    }
+.slide-2 .slide-screen, .slide-3 .slide-screen{
+    width: 100%;
+    }
+.slide-2 .slide-screen.hide-bg, .slide-3 .slide-screen.hide-bg{
+    background: none transparent;
+    }
+
+
+
+
+/* Hero - GCL Features
+---------------------------------------------- */
+.hero-features      { background-color: #f1f1f1; }
+.hero-features-alt  { background-color: #fff; }
+//#hero-features .useless-layout-wrapper{ width: 80%; }
+
+
+
+/* Hero - GamePlus
+---------------------------------------------- */
+.hero-gameplus      { background-color: #fff; padding-bottom: 3em; }
+.hero-gameplus-alt  { background-color: #f1f1f1; padding-bottom: 3em; }
+//#hero-gameplus .useless-layout-wrapper{ width: 80%; }
+
+
+
+/* Hero 7 - Devices
+---------------------------------------------- */
+.hero-devices{
+    background-color: #222;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 100% auto;
+    padding: 2em 0;
+    }
+.hero-devices .useless-layout-wrapper{ width: 50%; }
+
+/* Hero - Blackouts
+---------------------------------------------- */
+.hero-blackouts     { background-color: #fff; }
+.hero-blackouts-alt { background-color: #f1f1f1; }
+
+
+
+/* Hero - Promo Codes
+---------------------------------------------- */
+.hero-promocode{ background-color: #f1f1f1; }
+
+
+
+
+/* Hero - App Downloads
+---------------------------------------------- */
+.hero-appdownload{
+    background-color: #222;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    text-align: center;
+    min-height: 450px;
+    }
+.hero-appdownload .useless-layout1{ padding-top: 2.5em; }
+
+
+
+/* Hero - Live Chat
+---------------------------------------------- */
+.hero-chat{ 
+    background-color: #fff;
+    padding: 2em 0;
+    }
+
+
+
+
+/* Hero 12
+---------------------------------------------- */
+.hero-12{ background-color: #33ff99; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

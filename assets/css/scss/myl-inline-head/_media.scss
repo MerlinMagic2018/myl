@@ -1,0 +1,35 @@
+/* Removes border when inside `a` element in IE 8/9. */
+img{ border: 0; color: $callout-alt; height: auto; width: 100%; /* max-width: 100%;  Give it some text styles to offset alt text */ }
+
+/* Corrects overflow displayed oddly in IE 9. */
+svg:not(:root) { overflow: hidden; }
+
+figure{ margin: 0 0 .625em; padding: 0; }
+figcaption{
+    font-weight: normal; 
+    color: $black; 
+    }
+object, embed, video{ max-width: 100%; height: auto; } /* flash & video */
+
+/**
+* 1. Correct `inline-block` display not defined in IE 8/9.
+* 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+*/
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+    }
+
+/**
+* Prevent modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+    }

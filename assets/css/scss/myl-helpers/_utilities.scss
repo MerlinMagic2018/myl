@@ -1,0 +1,71 @@
+/* Layout Selectors
+---------------------------------------------- */
+
+/* overflow */
+.ov{ overflow: visible; }
+.oh{ overflow: hidden; }
+
+br, .clear      { clear: both; }                	/*clears floats*/
+.float-l        { float: left; }                	/*floats left*/
+.float-r        { float: right !important; }     	/*floats right*/
+hr              { clear: both; overflow: hidden; }
+
+
+/* Images
+---------------------------------------------- */
+.img--centre		{ display: block; margin:0 auto; }
+.img--left  		{ float: left; margin: 0 7px 0 0; }     /* Float image LEFT and give it some margin */
+.img--right 		{ float: right; margin: 0 0 0 10px; }   /* Float image to the RIGHT and give it some margin */
+
+
+/* display and visibility
+---------------------------------------------- */
+.is--block          { display: block !important; }   	/*displays as block, turns ON*/
+.is--inline         { display: inline; }           		/*displays as block, turns ON*/
+.is--inline-bl      { display: inline-block; }          /*displays as block, turns ON*/
+.is--hidden         { display: none !important; }      	/*displays as hidden, turns OFF*/
+.is--visible		{ display: block !important; }
+.is--invisible 		{ visibility: hidden; }
+
+
+/* Misc
+---------------------------------------------- */
+// .has--spinner{
+//     background: transparent url('/images/preloader-animation.gif') no-repeat 0 0;
+// 	}
+.no--bg          { background: 0 none !important; }  /*Removes Background*/
+.no--border      { border: 0 none !important; }      /*Removes Border*/
+
+
+/* margins */
+.no--m  { margin-bottom: 0 !important; }
+.xsm--m { @include rem(margin-bottom, 10px); }
+.sm--m  { @include rem(margin-bottom, 15px); }
+.med--m { @include rem(margin-bottom, 20px); }
+.lg--m  { @include rem(margin-bottom, 25px); }
+.xlg--m { @include rem(margin-bottom, 30px); }
+
+
+/* Text
+---------------------------------------------- */
+.text--left  { text-align: left; }
+.text--right { text-align: right; }
+.text--center{ text-align: center; }
+.bold       { font-weight: bold; }
+.italic     { font-style: italic; }
+.underline  { border-bottom: 1px solid; }
+.caption    { list-style: none; font-style: normal; @include rem(font-size, 11px); line-height: normal; }
+.uc  		{ text-transform: uppercase; }
+.lc  		{ text-transform: lowercase; }
+.antialiased{ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+
+
+// /* Breakpoint and device toggles
+// ---------------------------------------------- */
+// .desktop {
+//     display: none;
+// 	}
+// .mobile {
+//     display: block;
+// 	}

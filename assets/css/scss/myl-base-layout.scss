@@ -1,0 +1,75 @@
+@import 'myl-toolbox/toolbox';
+
+/* = IMPORTANT GLOBALS = only to be used as trailing class (the last class) on elements..
+        - .no-ss === no small screen === display none for small screens
+        - .no-ws === no wide screen === display none for wide screens
+        - target browsers: IE9+ FF6+ Chrome 11+ Safari5+ Opera11+
+        */
+
+/* TEMPLATE
+    0.0 Common Layout
+    0.1 Site Structure - Basic
+    0.2 Welcome Message
+    0.3 Global Menus
+
+
+    0.4 Navigation
+    0.5 Content Structure 
+        - Main Features
+        - Media Module
+        - Articles
+        - Watch Experience
+    0.6 Auxiliary Content
+    0.7 Footer
+    0.8 Ads
+    0.9 Common Modules 
+---------------------------------------------- */
+/* Main Features */
+/* Media Module */
+/* main list = category list / search results list / tag list */
+/* 2 items in a list = related articles = inline block items = 30px margin between the 2 */
+/* 2 items in a row = block items = 30px margin between the 2 */
+/* 3 items in a row = related articles = inline block items */
+/* 4 items in a row = related articles = inline block items */
+/* media list in right column / aside = top 5 how-to & popular */       
+/* page specific adjustments */
+
+/* Z-INDEX
+    body = 0
+    offcanvas = 1
+    global header = 3
+    header small screen = 4
+    skip links = 5
+*/
+
+    
+/* 0.0 $ Common HTML Base Structure
+====================================================================== */
+    @import "myl-base-layout/global-structure"; 
+    
+
+/* $ 0.1 Global Header - small screen and large screen
+====================================================================== */
+    @import "myl-base-layout/global-header";
+    @import "myl-base-layout/header-search";
+    
+
+/* $ 0.2 Global Header Navigation and Menus
+====================================================================== */
+    @import "myl-navigation/navigation";
+
+
+/* $ 0.2 Global Header Navigation and Menus
+====================================================================== */
+    @import "myl-base-layout/grid-simple";
+    @import "myl-global-components/components";
+    
+
+/* $ 0.4 Global Features / Promos / Media Blocks
+====================================================================== */
+    @import "myl-base-layout/sidebar";
+    //@import "myl-base-layout/grid-simple";
+    //@import "products/products";
+
+
+

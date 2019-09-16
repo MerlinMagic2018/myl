@@ -1,0 +1,103 @@
+/* Social Menu
+---------------------------------------------- */
+.menu-global .menu-social{ 
+	padding: 1em 5%;
+
+	& li{
+		margin-right: 1em;
+		}
+	}
+.menu-social .i-m{ 
+	height: 30px; 
+	width: 30px; 
+	} 
+
+.menu-social{
+    .is-circle{
+        background-color: #a6c7c9;
+        & :hover{
+            background-color: $brand-secondary;
+            }
+
+        & :focus{
+                background-color: $callout-alt;
+            }
+    }
+}
+
+
+@media (min-width: 48em) { /* 768px */
+
+    /* Social Menu
+    ---------------------------------------------- */
+    .menu-global .menu-social{ 
+        padding: .45em 0 0 0;
+        margin-bottom: 0;
+        border-bottom: 0 none;
+        transition: opacity 0.24s ease-in-out;
+
+        & li{ margin-right: .4em; }
+        & li:last-child{ margin-right: 0; }
+        
+    }
+    .is--sticky .menu-social{ opacity: 0; }
+    .menu-social .i-m{ 
+        height: 20px; 
+        width: 20px; 
+        }
+
+}
+
+
+//  1024px and up
+@media (min-width: 64em) {
+    
+    /* Social Menu
+    ---------------------------------------------- */
+    .menu-global .menu-social{
+        padding-top: .4em;
+        }
+
+}
+
+//  1280px and up
+@media (min-width: 80em) {
+    
+    /* Social Menu
+    ---------------------------------------------- */
+    .menu-global .menu-social {
+    	padding-top: .75em;
+    }
+    .menu-social .i-m{ 
+        height: 26px; 
+        width: 26px; 
+        }
+    
+}
+
+// 1440 and up
+@media (min-width: 90em) {
+    
+    /* Social Menu
+    ---------------------------------------------- */
+    .menu-social {}
+    
+}
+
+// 1600 and up
+@media (min-width: 100em) {
+    
+    /* Social Menu
+    ---------------------------------------------- */
+    .menu-social {}
+    
+}
+
+// 2100 and up
+@media (min-width: 131.25em) {
+    
+    /* Social Menu
+    ---------------------------------------------- */
+    .menu-social {}
+    
+}

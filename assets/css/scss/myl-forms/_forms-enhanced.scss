@@ -1,0 +1,126 @@
+/* FANCY SELECT MENU STYLES */
+.fancy-select, .facetwp-type-dropdown {
+    border: 1px solid #cacdce;
+    background-color: #fff;
+    //float: left;
+    position: relative;
+    padding: .3em .3em .5em;
+
+    select{
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        background-image: none;
+        -webkit-appearance: none;
+        @include rem(font-size, 14px);
+        //color: red;
+        }
+
+
+        /* Custom arrow - could be an image, SVG, icon font, etc. */
+        &:after {
+            background: none;
+            color: #bbb;
+            content: "\25BC";
+            font-size: 12px;
+            padding: 0;
+            position: absolute;
+            right: 1em;
+            top: 25%;
+            //bottom: .3em;
+            z-index: 1;
+            /* This hack makes the select behind the arrow clickable in some browsers */
+            pointer-events: none;
+            }
+
+        &:hover {
+            border-color: #434a4f;
+            }
+
+        &:focus, &:active {
+            outline: none;
+            border: none;
+            box-shadow: 0 0 1px 1px rgba(180,222,250, .85);
+            }
+
+    }
+
+
+.error .fancy-select, .error .controls select.date{
+    border-color: #dd3829;
+    border-left-width: 7px; 
+    }
+
+/* This hides native dropdown button arrow in IE */
+.fancy-select select::-ms-expand, .facetwp-type-dropdown select::-ms-expand {
+    display: none;
+    }
+
+/* Custom arrow - could be an image, SVG, icon font, etc. */
+.fancy-select:after, .facetwp-type-dropdown:after {
+    background: none;
+    color: #bbb;
+    content: "\25BC";
+    font-size: 12px;
+    padding: 0;
+    position: absolute;
+    right: 1em;
+    top: 25%;
+    //bottom: .3em;
+    z-index: 1;
+    /* This hack makes the select behind the arrow clickable in some browsers */
+    pointer-events: none;
+    }
+   
+/* Hover style - tricky because we're clipping the overflow */
+// .fancy-select:hover, .facetwp-type-dropdown:hover {
+//     border-color: #434a4f;
+//     }
+    
+/* Focus style */
+// .fancy-select select:focus, .facetwp-type-dropdown:focus, .fancy-select select:active {
+//     outline: none;
+//     border: none;
+//     box-shadow: 0 0 1px 1px rgba(180,222,250, .85);
+//     }
+    
+/* This hides focus around selected option in FF */
+.fancy-select select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    }
+
+/* small select -- in a list */
+.fancy-select-sm{
+    width: 120px;
+    overflow: hidden;
+    //float: left;
+    }
+.fancy-select-sm .text-field {
+    width: 120px;
+    }
+.fancy-select-sm select {
+    width: 120%;
+    max-width: 120%;
+    min-width: 120%;
+    padding: .3em 39% .3em .6em;
+    }
+
+
+.select.error .fancy-select{
+    overflow: visible;
+    }
+
+/* large select -- one in a block */
+.fancy-select-lg /*, .primary-filter .facetwp-type-dropdown*/ {
+    width: 375px;
+    max-width: 375px;
+    }
+.fancy-select-lg select /*, .primary-filter .facetwp-type-dropdown select*/ {
+    /* Make sure the select is wider than the container so we can clip the arrow */
+      width: 400px;
+      max-width: 400px;
+      min-width: 400px;
+      /* Padding works surpringly well */
+      //padding: .6em 19% .6em .8em;
+    }

@@ -1,0 +1,467 @@
+/* = IMPORTANT GLOBALS = only to be used as trailing class (the last class) on elements..
+		- .no-ss === no small screen === display none for small screens
+		- .no-ws === no wide screen === display none for wide screens
+		- target browsers: IE9+ FF6+ Chrome 11+ Safari5+ Opera11+
+		*/
+
+/* TEMPLATE
+	0.0 media wrappers
+	0.1 media structure
+	0.2 media items modifiers
+	0.3 promo item modifiers
+		- group of 2 --- 2 items in a horizontal list
+		- group of 3 --- 3 items in a horizontal list
+		- group of 4 --- 4 items in a horizontal list
+		- group of 5 --- 5 items in a horizontal list
+		- 
+	0.4 media images
+	0.5 media content 
+
+---------------------------------------------- */
+
+/* 0.0 media wrappers
+---------------------------------------------- */
+/* 0.1 feature structure setup
+---------------------------------------------- */
+/* 0.2 media items modifiers
+---------------------------------------------- */
+/* 0.3 promo item modifiers
+---------------------------------------------- */
+/* 0.4 media images
+---------------------------------------------- */
+/* 0.5 media content
+---------------------------------------------- */
+
+
+/* main list = category list / search results list / tag list */
+/* 2 items in a list = related articles = inline block items = 30px margin between the 2 */
+/* 2 items in a row = block items = 30px margin between the 2 */
+/* 3 items in a row = related articles = inline block items */
+/* 4 items in a row = related articles = inline block items */
+
+
+/* Quick Grids
+    ---------------------------------------------- */
+.dropdown_product_cat{
+    
+    //option nbsp{ margin-left: -115px; }
+
+    option:nth-child(2){
+        display: none;
+    }
+}
+
+.filter-wrap{
+    margin-bottom: 1.3em;
+    padding-bottom: 1em;
+    border-bottom: 3px dotted #ccc;
+    }
+
+// .facetwp-facet {
+//     margin-bottom: 1.3em;
+//     padding-bottom: 1em;
+//     border-bottom: 3px dotted #ccc;
+// }
+// .facetwp-facet.facetwp-type-dropdown {
+//     margin-bottom: 0;
+// }
+
+.facetwp-type-dropdown{ margin-bottom: 0; }
+.facetwp-type-checkboxes{ @include rem(font-size, 14px); padding-top:.6em; }
+
+.facet-label{ @include rem(font-size, 14px); color: $brand-primary; margin-bottom: .3em; }
+
+.facetwp-pager-label {
+    display: inline-block;
+    margin-right: 12px; 
+    }
+
+// .f-labels{ color: red !important; }
+// .products-header--main .f-labels{ 
+//     float: left;
+//     margin: 4px .5em 0 0;
+// }
+
+.facetwp-page {
+    display: inline-block;
+    padding: 0px 4px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.facetwp-page.active {
+    font-weight: bold;
+    cursor: default;
+}
+
+.facetwp-loading {
+    width: 20px;
+    height: 20px;
+    background: url('/assets/img/facet/loading.png') no-repeat;
+    background-size: 20px 20px;
+    animation: spin 700ms infinite linear;
+}
+
+.facetwp-overlay {
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.6;
+}
+
+/* Checkboxes */
+
+.facetwp-type-checkboxes .facetwp-depth {
+    display: none;
+}
+
+.facetwp-type-checkboxes .facetwp-depth.visible {
+    display: inherit;
+}
+
+.facetwp-checkbox {
+    background: url('/assets/img/facet/checkbox.png') 0 50% no-repeat;
+    background-size: 14px 14px;
+    margin-bottom: .6em;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.facetwp-checkbox.checked {
+    background-image: url('/assets/img/facet/checkbox-on.png');
+}
+
+.facetwp-checkbox.disabled,
+.facetwp-radio.disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.facetwp-checkbox .facetwp-expand {
+    float: right;
+}
+
+/* Radio */
+
+.facetwp-radio {
+    background: url('/assets/img/facet/radio.png') 0 50% no-repeat;
+    background-size: 14px 14px;
+    margin-bottom: 4px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.facetwp-radio.checked {
+    background-image: url('/assets/img/facet/radio-on.png');
+}
+
+/* Date range */
+
+.flatpickr-clear {
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+/* fSelect */
+
+//.facetwp-type-dropdown{ margin-bottom: 1.3em; }
+
+.facetwp-type-fselect .fs-wrap,
+.facetwp-type-fselect .fs-dropdown {
+    width: 220px;
+}
+
+.facetwp-type-fselect .fs-wrap.fs-disabled .fs-option {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/* Hierarchy */
+
+.facetwp-depth {
+    margin-left: 12px;
+}
+
+.facetwp-link {
+    cursor: pointer;
+}
+
+.facetwp-link.checked {
+    font-weight: bold;
+    cursor: default;
+}
+
+.facetwp-toggle {
+    cursor: pointer;
+}
+
+.facetwp-seo,
+.facetwp-hidden {
+    display: none;
+}
+
+/* Slider */
+
+// .facetwp-slider-wrap {
+//     padding-bottom: 15px;
+// }
+
+// .facetwp-slider-reset {
+//     border: 1px solid #d9d9d9;
+//     border-radius: 3px;
+//     background: #fff;
+//     box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ebebeb, 0 3px 6px -3px #bbb;
+//     padding: 4px 8px;
+//     cursor: pointer;
+// }
+
+.noUi-target {
+    padding: 0 15px;
+}
+
+/* Search */
+
+.facetwp-search-wrap {
+    position: relative;
+}
+
+.facetwp-search {
+    padding-right: 28px;
+}
+
+.facetwp-btn {
+    top: 0;
+    right: 5px;
+    line-height: 1;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.facetwp-btn:before {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('/assets/img/facet/icon-search.png') no-repeat;
+    background-size: 20px 20px;
+}
+
+/* Proximity */
+
+// .location-wrap {
+//     display: inline-block;
+//     position: relative;
+// }
+
+// input.facetwp-location {
+//     padding-right: 28px;
+//     min-width: 240px;
+// }
+
+// .location-results {
+//     position: absolute;
+//     background: #fff;
+//     border-left: 1px solid #ddd;
+//     border-right: 1px solid #ddd;
+//     overflow: hidden;
+//     width: 100%;
+// }
+
+// .location-result {
+//     font-size: 11px;
+//     border-bottom: 1px solid #ddd;
+//     padding: 5px;
+//     cursor: pointer;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+//     color: #888;
+// }
+
+// .location-result:hover {
+//     background-color: #f8f8f8;
+// }
+
+// .location-result.active {
+//     background-color: #EBF2FE;
+// }
+
+// .result-main {
+//     font-size: 13px;
+//     color: #222;
+// }
+
+// .locate-me {
+//     top: 50%;
+//     right: 5px;
+//     line-height: 1;
+//     transform: translateY(-50%);
+//     position: absolute;
+//     cursor: pointer;
+//     opacity: 0.5;
+// }
+
+// .locate-me:before {
+//     display: inline-block;
+//     content: '';
+//     width: 20px;
+//     height: 20px;
+//     background: url('/assets/img/facet/icon-locate.png') no-repeat;
+//     background-size: 20px 20px;
+// }
+
+// .locate-me.f-loading:before {
+//     background: url('/assets/img/facet/loading.png') no-repeat;
+//     background-size: 20px 20px;
+//     animation: spin 700ms infinite linear;
+// }
+
+// .locate-me.f-reset:before {
+//     background: url('/assets/img/facet/icon-close.png') no-repeat;
+//     background-size: 20px 20px;
+// }
+
+/* Rating */
+
+// .facetwp-stars {
+//     float: left;
+//     line-height: 1;
+//     padding-right: 4px;
+//     user-select: none;
+// }
+
+// .facetwp-star {
+//     float: right;
+//     cursor: pointer;
+//     font-size: 20px;
+//     color: #ccc;
+// }
+
+// .facetwp-star:hover,
+// .facetwp-star:hover ~ .facetwp-star,
+// .facetwp-star.selected,
+// .facetwp-star.selected ~ .facetwp-star {
+//     color: #000;
+// }
+
+// .facetwp-star.selected:hover,
+// .facetwp-star.selected:hover ~ .facetwp-star {
+//     color: red;
+// }
+
+/* CSS animations */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Selections shortcode */
+
+.facetwp-selections li {
+    display: inline-block;
+    line-height: 1;
+}
+
+.facetwp-selections .facetwp-selection-value {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+
+    padding-right: 16px;
+    background-image: url('/assets/img/facet/icon-close.png');
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+	
+	
+	
+
+// 768px and up
+@media (min-width: 48em) {
+    
+    .filter-wrap{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0 none;
+
+        margin-right: 1.5em;
+
+        float: left;
+        width: 29%;
+        }
+    .catalogue-utilities .button--primary{
+        clear: left;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+}
+
+
+// 920px and up
+@media (min-width: 57.500em) { /* 920px */
+
+}
+
+
+//  1024px and up
+@media (min-width: 64em) {
+
+   
+}
+
+//  1280px and up
+@media (min-width: 80em) {
+
+}
+
+// 1440 and up
+@media (min-width: 90em) {
+    .filter-wrap{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0 none;
+
+        margin-right: 1.5em;
+
+        float: left;
+        width: 29%;
+        }
+    .filter-wrap{
+        margin-bottom: 1.3em;
+        padding-bottom: 1em;
+        border-bottom: 3px dotted #ccc;
+
+        float: none;
+        width: 100%;
+        }
+    .catalogue-utilities .button--primary{
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+}
+
+// 1600 and up
+@media (min-width: 100em) {
+
+}
+
+// 2100 and up
+@media (min-width: 131.25em) {
+    
+}
+
+
+
+
+

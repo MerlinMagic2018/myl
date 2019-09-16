@@ -1,0 +1,449 @@
+/* = IMPORTANT GLOBALS = only to be used as trailing class (the last class) on elements..
+		- .no-ss === no small screen === display none for small screens
+		- .no-ws === no wide screen === display none for wide screens
+		- target browsers: IE9+ FF6+ Chrome 11+ Safari5+ Opera11+
+		*/
+
+/* TEMPLATE
+	0.0 media wrappers
+	0.1 media structure
+	0.2 media items modifiers
+	0.3 promo item modifiers
+		- span of 2 --- 2 items in a horizontal list
+		- span of 3 --- 3 items in a horizontal list
+		- span of 4 --- 4 items in a horizontal list
+		- span of 5 --- 5 items in a horizontal list
+		- 
+	0.4 media images
+	0.5 media content 
+
+---------------------------------------------- */
+
+/* 0.0 media wrappers
+---------------------------------------------- */
+/* 0.1 feature structure setup
+---------------------------------------------- */
+/* 0.2 media items modifiers
+---------------------------------------------- */
+/* 0.3 promo item modifiers
+---------------------------------------------- */
+/* 0.4 media images
+---------------------------------------------- */
+/* 0.5 media content
+---------------------------------------------- */
+
+
+/* main list = category list / search results list / tag list */
+/* 2 items in a list = related articles = inline block items = 30px margin between the 2 */
+/* 2 items in a row = block items = 30px margin between the 2 */
+/* 3 items in a row = related articles = inline block items */
+/* 4 items in a row = related articles = inline block items */
+
+
+/* 0.0 media wrappers
+---------------------------------------------- */
+.list-of-features{
+	margin-bottom: 1.875em;
+	width: 100%;
+	}
+.is--Listing .callout{
+	top: 1.2em;
+	}
+
+
+/* 0.1 feature structure setup
+---------------------------------------------- */
+.is--Listing{
+	border-top: 1px solid #e5e5e5;
+	padding-top: 1.25em;
+	margin-bottom: 1.25em;
+	}
+.list-of-features .is--Listing:first-of-type{
+	border-top: 0 none;
+	padding-top: 0;
+	}
+.aux-list .is--Listing {
+    border-top: 1px dotted #000000;
+    margin-bottom: .625em;
+    padding-top: .9375em;
+	}
+.aux-list .is--Listing:first-of-type{
+    border-top: 0 none;
+    padding-top: 0;
+	}
+
+.feature-body{}
+
+.feature-img{
+	display: block;
+	margin-bottom: .625000em;
+	}
+.feature-img img{
+	width: 100%;
+	}
+.feature-headline{
+	font-size: 18px; font-size: 1.125rem;
+	}
+.feature-excerpt{ line-height:1.4; }
+
+.promo-text		{ font-size:12px; font-size:.75rem; color:#000; }
+
+
+/* 0.2 media items modifiers
+---------------------------------------------- */
+
+/* item in a list - img left, content right -- LRG */
+.is--mainFeature{}
+
+/* items in a list style - img left, content right */
+.is--featureListing{
+	border-top: 0 none;
+	padding-top: 0;
+	}
+.is--Listing{}
+
+/* items in a block style - img above, content below */
+.is--promo{	float: left; }
+
+.is--Event{}
+
+
+
+/* 0.3 promo item modifiers
+---------------------------------------------- */
+
+/* 2 in a row */
+.span-of-2 .is--promo{
+	width: 47.6562%;
+	}
+.span-of-2 > .is--promo + .is--promo{
+	margin-left: 4.6875%;
+	}
+
+/* 3 in a row */
+.span-of-3 .is--promo{
+	width: 31.851851%;
+	}
+.span-of-3 > .is--promo + .is--promo{
+	margin-left: 2.222222%;
+	}
+	
+/* 4 in a row */
+.span-of-4 .is--promo{
+	width: 22.5%;
+	}
+.span-of-4 > .is--promo + .is--promo{
+	margin-left: 3.125%;
+	}
+
+/* 5 in a row */
+.span-of-5 .is--promo{
+	width: 19.111111%;
+	}
+.span-of-5 > .is--promo + .is--promo{
+	margin-left: 1.111111%;
+	}
+
+
+
+/* 0.4 media images
+---------------------------------------------- */
+.img--isMainFeature{}
+	
+.img--isPromo{ /*height: 150px;*/ margin-bottom: .75em; overflow: hidden; }
+
+.img--isFeatureListing{
+	float: left;
+	margin-bottom: 1.5625em;
+	margin-right: 3.125%;
+	width: 57.5%;
+	}
+.img--isListing{
+	float: left;
+	margin-right: 3.25%;
+	width: 31.25%;
+	}
+
+
+/* 0.5 media content
+---------------------------------------------- */
+.is--featureDate{
+	color: #999;
+	font-size: 12px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	}
+	.is--mainFeature .is--featureDate{
+		padding: .9em 0 .3em;
+		}
+	.is--mainFeature .feature-headline{
+		margin-bottom: 2em;
+		}
+
+.is--featureListing .feature-body {
+    padding-top: 30px;
+    padding-top: 1.875rem;
+	}
+
+.feature-excerpt{}
+	
+	
+	
+
+/* MQ 1024+
+================================================================================ */
+@media only screen and (min-width:37.5em){ /* 600px */
+	
+	/* 0.0 media wrappers
+	---------------------------------------------- */
+	/* 0.1 feature structure setup
+	---------------------------------------------- */
+	/* 0.2 media items modifiers
+	---------------------------------------------- */
+	/* 0.3 promo item modifiers
+	---------------------------------------------- */
+	/* 0.4 media images
+	---------------------------------------------- */
+	/* 0.5 media content
+	---------------------------------------------- */
+		
+}
+
+
+/* MQ 820- tablets & small screens
+================================================================================ */
+@media only screen and (max-width:51.250em){ /* 820px */
+	
+	
+	/* 0.0 media wrappers
+	---------------------------------------------- */
+	/* 0.1 feature structure setup
+	---------------------------------------------- */
+	/* 0.2 media items modifiers
+	---------------------------------------------- */
+	/* main feature */
+	.is--mainFeature{
+		margin-bottom: 1.3em;
+		}
+	
+	.is--Listing .feature-title{
+		margin-top: .5em;
+		}
+	
+	/* 0.3 promo item modifiers
+	---------------------------------------------- */
+	/* 0.4 media images
+	---------------------------------------------- */
+	/* sub features */
+	.main-features .img--isPromo{
+		float: left;
+		margin-right: 2.4193548%;
+		width: 25%;
+		}
+		
+	/* 0.5 media content
+	---------------------------------------------- */
+	.feature-body .keyword{ display:none; }
+		
+	/* sub features */
+	.main-features .is--promo{
+		float: none;
+		margin: 0 0 1em;
+		width: 100%;
+		}
+	
+}
+
+
+/* MQ 660- small tablet specifically == blackberry playbook, kindle etc.
+================================================================================ */
+@media only screen and (max-width:41.25em){ /* 660px */
+	
+	
+	/* 0.0 media wrappers
+	---------------------------------------------- */
+	.list-of-features{
+		margin-bottom: 1.25em;
+		}
+		
+	/* 0.1 feature structure setup
+	---------------------------------------------- */
+		
+	
+	/* 0.2 media items modifiers
+	---------------------------------------------- */
+	/* List Feature */
+	.is--featureListing .feature-body{
+		padding-top:.9375rem;
+		}
+	.is--featureListing .feature-title{
+		font-size: 28px;
+		font-size:1.75rem;
+		}
+		
+		
+	/* 0.3 promo item modifiers
+	---------------------------------------------- */
+	/* 0.4 media images
+	---------------------------------------------- */
+	.img--isFeatureListing{
+		margin-right:2.6738%;
+		width:48.6631%;
+		}
+	
+	
+	/* 0.5 media content
+	---------------------------------------------- */
+	/* General List */
+	.is--Listing .feature-title{
+		font-size:1.5rem;
+		margin-top:.625rem;
+		}
+
+
+}
+
+
+/* MQ 599- phones & small tablets
+================================================================================ */
+@media only screen and (max-width:599px){ /* 599px */
+	
+	
+	/* 0.0 media wrappers
+	---------------------------------------------- */
+	/* 0.1 feature structure setup
+	---------------------------------------------- */
+	/* 0.2 media items modifiers
+	---------------------------------------------- */
+	
+	.is--featureListing{
+		border-bottom: 5px solid #000;
+		margin-bottom: 1.25em;
+		padding-bottom: .75em;
+		}
+	.is--featureListing + .is--Listing{
+		border-top: 0 none;
+		padding-top: 0;
+		}
+	
+	.is--Listing{
+		border-top: 1px dotted #000;
+		margin-bottom: .4em;
+		padding-top: .9em;
+		}
+		
+		
+	/* 0.3 promo item modifiers
+	---------------------------------------------- */
+	/* items in a block style - img above, content below */
+	.span-of-2 .is--promo, .span-of-3 .is--promo, .span-of-4 .is--promo, .span-of-5 .is--promo{ 
+		float: none; margin: 0 0 1em; width: 100%;
+		}
+	.span-of-2 > .is--promo + .is--promo, .span-of-3 > .is--promo + .is--promo, .span-of-4 > .is--promo + .is--promo, .span-of-5 > .is--promo + .is--promo{ 
+		margin-left: 0; 
+		}
+		
+		
+	/* 0.4 media images
+	---------------------------------------------- */
+	.img--isMainFeature, .img--isFeatureListing{
+		/*margin-right:0;
+		margin-bottom: 0;*/
+		/*width:100%;*/
+		}
+	
+	.img--isFeatureListing{
+		float:none;
+		margin-right:0;
+		margin-bottom: 0;
+		width:100%;
+		}
+		
+		
+	/* 0.5 media content
+	---------------------------------------------- */
+	.is--featureListing .sizes-XLG{
+		margin-bottom: .4rem;
+		margin-top: .625rem;
+		}
+	.is--featureListing .feature-body{
+	    padding-top: 0;
+		}
+	
+	.callout-promo{
+		margin:0 0 1px;
+		}
+	
+	
+	/* media images
+	---------------------------------------------- */
+	/* sub features */
+	.main-features .img--isPromo{
+		width: 30%;
+		}
+	/* sub features */
+	.span-of-3 .feature-img, .span-of-4 .feature-img, .span-of-5 .feature-img{
+		float: left;
+		margin-right: 2.4193548%;
+		max-width: 40%;
+		}
+	
+}
+
+/* MQ 480+
+================================================================================ */
+@media only screen and (max-width:30em){ /* 480px */
+	
+	/* 0.0 media wrappers
+	---------------------------------------------- */
+	/* 0.1 feature structure setup
+	---------------------------------------------- */
+	/* 0.2 media items modifiers
+	---------------------------------------------- */
+		
+		
+	/* 0.3 promo item modifiers
+	---------------------------------------------- */
+	/* 0.4 media images
+	---------------------------------------------- */
+	/* 0.5 media content
+	---------------------------------------------- */
+	.is--Listing .callout{
+		display: none;
+		}
+		.is--featureListing .callout-feature{
+			font-size:1rem;
+			}
+	.is--Listing .feature-title {
+	    margin-top: 0;
+		}
+	.is--Listing .sizes-LG {
+	    line-height: 1.1;
+		}
+
+}
+
+
+/* MQ 380+
+================================================================================ */
+@media only screen and (max-width:23.75em){ /* 380px */
+	
+	
+	/* 0.0 media wrappers
+	---------------------------------------------- */
+	/* 0.1 feature structure setup
+	---------------------------------------------- */
+	/* 0.2 media items modifiers
+	---------------------------------------------- */
+	/* 0.3 promo item modifiers
+	---------------------------------------------- */
+	/* 0.4 media images
+	---------------------------------------------- */
+	/* 0.5 media content
+	---------------------------------------------- */
+}
+
+
+
+
+

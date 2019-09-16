@@ -1,0 +1,91 @@
+/* Global Breadcrumb
+---------------------------------------------- */
+
+.global-breadcrumb{
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #f1f1f1;
+    color: #ccc;
+    padding: 1.1em 0 .7em;
+    @include rem(font-size, 11px);
+    margin-bottom: 1em;
+
+    .breadcrumb-list{
+        margin: 0;
+        }
+
+    li{
+        float: left;
+        margin: 0 .6em 0 0;
+        list-style: none outside none;
+        }
+
+    & li:after{
+        content:'\00BB';
+        padding-left: .7em;
+        }
+    & li:last-child:after{
+        content:' ';
+        padding-left: 0;
+        }
+}
+
+
+// 600px and up
+@media (min-width: 37.5em) {
+
+}
+
+// 768px and up
+@media (min-width: 48em) {
+    .global-breadcrumb{
+        // padding: 1.4em 0 1.1em;
+        // @include rem(font-size, 12px);
+        margin-bottom: 1.5em;
+        }
+}
+
+// 920px and up
+@media (min-width: 57.500em) {
+
+}
+
+//  1024px and up
+@media (min-width: 64em) {
+    .global-breadcrumb{
+        // padding: 1.4em 0 1.1em;
+        // @include rem(font-size, 12px);
+        margin-bottom: 2em;
+        }
+}
+
+//  1280px and up
+@media (min-width: 80em) {
+
+    .global-breadcrumb{
+        padding: 1.4em 0 1.1em;
+        @include rem(font-size, 12px);
+        margin-bottom: 2.5em;
+        }
+
+}
+
+// 1440 and up
+@media (min-width: 90em) {
+
+    .global-breadcrumb{
+        .breadcrumb-list{
+            margin: 0 auto;
+            }
+    }
+
+}
+
+// 1600 and up
+@media (min-width: 100em) {
+
+}
+
+// 2100 and up
+@media (min-width: 131.25em) {
+
+}

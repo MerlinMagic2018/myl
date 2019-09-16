@@ -1,0 +1,476 @@
+/* 
+
+    The content of this file gets exported to inline-head.css, which gets minified and included inline in the head - found in header.php
+        
+*/
+/* 1.2 Browser setup / nomalize
+====================================================================== */
+/* 1.1 Browser and Document setup / nomalize */
+:root {
+  background-color: #fff;
+  color: #717171; }
+
+html {
+  font-family: Verdana, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch; }
+
+body {
+  min-height: 100%;
+  position: relative;
+  z-index: 0;
+  -webkit-font-smoothing: antialiased; }
+
+body, object, iframe, article, aside, details, figcaption, figure, footer, header, nav, section, summary, form, fieldset, legend, button, input, optgroup, select, textarea {
+  margin: 0;
+  padding: 0; }
+
+html, div, article, aside, footer, header, main, menu, nav, section, summary, ul, ol, li, dl, dt, dd, hr, form, fieldset, legend, input, .text-field, button, select, textarea {
+  box-sizing: border-box; }
+
+/* Html5 structure
+	---------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none; }
+
+[hidden], template {
+  display: none; }
+
+/* 1.2 Global importants */
+/* Clear fix */
+.cf:before, .cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+/* 1.4 General Typography & Headings
+====================================================================== */
+/* General Typography */
+/* shared type styles */
+address, caption, cite, code, var {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: none;
+  vertical-align: middle; }
+
+del {
+  text-decoration: line-through; }
+
+small, sup, sub {
+  font-size: 80%; }
+
+abbr, acronym {
+  font-size: 85%;
+  text-transform: uppercase;
+  letter-spacing: .1em; }
+
+abbr[title], acronym[title], dfn[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  cursor: help; }
+
+sup, sub {
+  line-height: 0; }
+
+sup {
+  vertical-align: super; }
+
+sub {
+  vertical-align: sub; }
+
+caption, cite, dfn, em, i {
+  font-style: italic; }
+
+b, strong, th, thead, legend {
+  font-weight: bold; }
+
+p {
+  margin: 0 0 .5em;
+  word-spacing: 0.125em; }
+
+.small-text {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+.intro:first-line {
+  font-variant: small-caps; }
+
+/* Styles introductory paragraph. Assign to first paragraph */
+.drop:first-letter {
+  float: left;
+  font-size: 28px;
+  font-size: 1.75rem;
+  margin: -.0em 1px .3125em 0; }
+
+/* Styles a drop cap on each paragraph */
+.lead {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  margin-bottom: .75em; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/* blockquotes */
+blockquote {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  margin: 0.6667em 0;
+  padding: 0 2.2222em 0.6667em 0;
+  /* 40px 12px */
+  float: left;
+  width: 33%; }
+
+blockquote p {
+  margin-top: 0.3333em;
+  margin-bottom: 0.6667em; }
+
+code, kbd, samp {
+  font-family: monospace, monospace; }
+
+/* Headings & Titles  */
+/* Addresses `h1` font sizes within `section` and `article` in Firefox 4+, Safari 5, and Chrome. */
+/* 1.5.1 Global setup
+---------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 0 0; }
+
+h2, h3, h4, h5, h6 {
+  color: #06435b; }
+
+/* Primary Heading selectors setup 
+---------------------------------------------- */
+.wfl {
+  font-family: "light", "Helvetica", Arial, sans-serif; }
+
+.wfr {
+  font-family: "regular", "Helvetica", Arial, sans-serif; }
+
+.wfsb {
+  font-family: "semibold", "Helvetica", Arial, sans-serif; }
+
+.wfb {
+  font-family: "bold", "Helvetica", Arial, sans-serif;
+  margin-top: 0; }
+
+.wfsg {
+  font-family: "georgia", serif; }
+
+/* 1.6 Links & Cursors
+====================================================================== */
+/* Cursors 
+---------------------------------------------- */
+a, label, select, .pointer, button, html input[type="button"], .submit, input[type="reset"], input[type="submit"] {
+  cursor: pointer; }
+
+/* Links
+---------------------------------------------- */
+a {
+  background: transparent;
+  color: #000; }
+
+a:hover {
+  color: #666;
+  outline: none;
+  text-decoration: none; }
+
+a:focus {
+  background-color: #f1f1f1;
+  color: #666;
+  text-decoration: underline;
+  outline: none; }
+
+a:active {
+  color: inherit;
+  background-color: transparent;
+  outline: none; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  display: block;
+  color: #06435b;
+  text-decoration: none; }
+
+h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus {
+  color: #0a6d94;
+  text-decoration: underline; }
+
+/* Call out colour */
+.cc {
+  color: #88090d; }
+
+.cc:hover {
+  text-decoration: none; }
+
+.cc:focus {
+  outline: none;
+  text-decoration: underline; }
+
+/* Reversed anchors */
+.ra a {
+  text-decoration: none; }
+
+.ra a:hover {
+  text-decoration: underline; }
+
+/* 1.7 Images, Media & Embedded content 
+====================================================================== */
+/* Removes border when inside `a` element in IE 8/9. */
+img {
+  border: 0;
+  color: #88090d;
+  height: auto;
+  width: 100%;
+  /* max-width: 100%;  Give it some text styles to offset alt text */ }
+
+/* Corrects overflow displayed oddly in IE 9. */
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0 0 .625em;
+  padding: 0; }
+
+figcaption {
+  font-weight: normal;
+  color: #000; }
+
+object, embed, video {
+  max-width: 100%;
+  height: auto; }
+
+/* flash & video */
+/**
+* 1. Correct `inline-block` display not defined in IE 8/9.
+* 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+*/
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+* Prevent modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* 1.8 Global Forms Normalize
+====================================================================== */
+/* Form Elements */
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.15;
+  vertical-align: baseline; }
+
+select {
+  padding: initial; }
+
+optgroup {
+  font-weight: bold; }
+
+select {
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-appearance: menulist;
+  -webkit-box-align: center;
+  -webkit-rtl-ordering: logical; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button; }
+
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus, select:focus {
+  box-shadow: none;
+  outline: none; }
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  outline-offset: -2px; }
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+input[type="hidden"] {
+  display: none; }
+
+/* Colors for form validity */
+input:required {
+  background-color: #fff; }
+
+input:required:focus {
+  border: 1px solid red;
+  outline: none; }
+
+input:valid, textarea:valid {
+  background-color: #fff; }
+
+input:invalid, textarea:invalid {
+  background-color: #fff; }
+
+progress {
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+  height: auto; }
+
+::-ms-reveal,
+::-ms-clear {
+  display: none !important; }
+
+/* Form Structure */
+form {
+  margin-bottom: 1em; }
+
+fieldset {
+  border: 0;
+  padding: 0.35em 0.75em 0.625em; }
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal; }
+
+label {
+  display: block;
+  margin-bottom: .1875em;
+  font-weight: bold; }
+
+/* PLACEHOLDER STYLING
+---------------------------------------------- */
+.text-field::-webkit-input-placeholder {
+  color: #999;
+  font-style: italic; }
+
+.text-field:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999;
+  font-style: italic; }
+
+.text-field::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999;
+  font-style: italic; }
+
+.text-field:-ms-input-placeholder {
+  color: #999;
+  font-style: italic; }
+
+.text-field:focus::-webkit-input-placeholder {
+  opacity: .2; }
+
+.text-field:focus:-moz-placeholder {
+  /* Firefox 18- */
+  opacity: .2; }
+
+.text-field:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  opacity: .2; }
+
+.text-field:focus:-ms-input-placeholder {
+  opacity: .2; }
+
+/* 1.9 Lists & Tables
+====================================================================== */
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1.625em; }
+
+ul {
+  list-style-type: disc; }
+
+ul li {
+  margin-bottom: .3em; }
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside; }
+
+ol li {
+  margin-bottom: .3em; }
+
+/* nested lists */
+ul ul, ul ol, ol ol, ol ul {
+  margin: .6em 0 .6em 1em;
+  padding-left: 30px; }
+
+/*definition lists*/
+dt {
+  font-weight: normal; }
+
+dl dd {
+  margin: 0 0 .5125em; }
+
+dialog dd {
+  margin-bottom: .5em;
+  line-height: normal; }
+
+ul dl, ol dl {
+  margin: 0 0 0 .625em; }
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  /*margin-bottom: .625em;*/ }
+
+th summary {
+  font-weight: normal;
+  margin: 0 0 .625em 0; }
+
+td, th {
+  padding: 0; }

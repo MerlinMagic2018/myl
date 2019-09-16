@@ -1,0 +1,31 @@
+/* Cursors 
+---------------------------------------------- */
+a, label, select, .pointer, button, html input[type="button"], .submit, input[type="reset"], input[type="submit"]{ cursor: pointer; }
+
+
+/* Links
+---------------------------------------------- */
+a           { background: transparent; color: $link-color; }
+a:hover     { color: $link-hover; outline: none; text-decoration: none; }
+a:focus     { background-color: #f1f1f1; color: $link-hover; text-decoration: underline; outline: none; }
+a:active    { color: inherit; background-color: transparent; outline: none; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ display: block; color: $brand-primary; text-decoration: none; }
+h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus{ 
+    color: $brand-primary-alt;
+    text-decoration: underline;
+    }
+//h1 a:active{ border: 1px solid red; }
+
+/* Call out colour */
+.cc         { color: $callout-alt; }
+.cc:hover   { text-decoration: none; }
+.cc:focus   { outline: none; text-decoration: underline; }
+
+/* Reversed anchors */
+.ra a{
+    text-decoration: none;
+}
+.ra a:hover{
+    text-decoration: underline;
+}

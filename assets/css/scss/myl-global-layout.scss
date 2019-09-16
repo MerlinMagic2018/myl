@@ -1,0 +1,58 @@
+@import 'myl-toolbox/toolbox';
+
+/* TEMPLATE
+    0.0 Common Layout
+    0.1 Site Structure - Basic
+    0.2 Welcome Message
+    0.3 Global Menus
+
+
+    0.4 Navigation
+    0.5 Content Structure 
+        - Main Features
+        - Media Module
+        - Articles
+        - Watch Experience
+    0.6 Auxiliary Content
+    0.7 Footer
+    0.8 Ads
+    0.9 Common Modules 
+---------------------------------------------- */
+/* Main Features */
+/* Media Module */
+/* main list = category list / search results list / tag list */
+/* 2 items in a list = related articles = inline block items = 30px margin between the 2 */
+/* 2 items in a row = block items = 30px margin between the 2 */
+/* 3 items in a row = related articles = inline block items */
+/* 4 items in a row = related articles = inline block items */
+/* media list in right column / aside = top 5 how-to & popular */       
+/* page specific adjustments */
+
+/* Z-INDEX
+    body = 0
+    global header = 1
+    header small screen = 2
+    skip links = 3
+*/
+
+
+/* $ 0.3 Global Content Layout and Styles
+====================================================================== */
+    @import "myl-content/content"; 
+
+
+/* $ 0.3 Product Catalogue Layout
+====================================================================== */
+    @import "myl-catalogue/products";
+
+
+/* $ 0.6 Forms
+====================================================================== */
+    @import "myl-forms/forms";
+
+
+/* $ 0.7 Helpers
+====================================================================== */
+    @import "myl-helpers/helpers";
+ 
+

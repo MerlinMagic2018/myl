@@ -1,0 +1,141 @@
+/* Utility Menu
+---------------------------------------------- */
+.utility-menu {
+    background-color: #fff;
+    @include rem(font-size, 14px);
+    line-height: 1;
+    list-style-type: none;
+    margin: 3px 0 0;
+    padding: 0;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(2, 50%);
+
+    & li{
+        margin: 0;
+    }
+
+    .i-inline{
+        display: block;
+    }
+
+    & a{
+        background-color: $brand-primary;
+        color: $bg-primary;
+        display: block;
+        padding: .8em 1em;
+    }
+    & a:hover, a:focus{
+        background: $brand-primary-alt;
+    }
+    & a:active{
+        background: $border-color-ul;
+    }
+    & .is--selected, .current_page_item a{
+        background-color: $brand-primary-alt;
+        color: $white;
+    }
+    & .is--selected:hover, .is--selected:focus, .is--selected:active, .current_page_item a:active{
+        background-color: $brand-primary;
+    }
+}
+
+
+@media (min-width: 48em) { /* 768px */
+
+    /* Utility Menu
+    ---------------------------------------------- */
+    .utility-menu {
+        display: block;
+        @include rem(font-size, 12px);
+        @include rem(margin-bottom, 15px);
+        padding-top: .2em;
+        overflow: hidden;
+
+        & li{
+            display: inline;
+            float: left;
+            margin-right: .5em;
+        }
+
+        & li:last-child{ margin-right: 0; }
+
+        a, a:hover, a:active{ background-color: transparent; }
+        a:focus, .current-menu-item a:focus, .current_page_item a:focus, .is--selected:focus{
+            background-color: #f8f8f8;
+        }
+
+        a{
+            color: $brand-secondary;
+            float: left; 
+            padding: .3em 0;
+            }
+        a:hover, & a:focus{
+            color: $callout-alt;
+            }
+
+        & li:before             { color: $bg-primary; content: '|'; float: left; line-height: .7; padding-right: .5em; padding-top: .4em;  }
+        & li:first-child:before { content: ''; padding-right: 0; }
+
+    }
+
+    .utility-menu .is--selected{
+        background-color: transparent;
+        color: $callout-alt;
+        }
+    .utility-menu .is--selected:hover{
+        background-color: transparent;
+        color: $black;
+        
+        }
+
+}
+
+
+//  1024px and up
+@media (min-width: 64em) {
+    
+    /* Utility Menu
+    ---------------------------------------------- */
+    .utility-menu { float: right; }
+
+}
+
+//  1280px and up
+@media (min-width: 80em) {
+    
+    /* Utility Menu
+    ---------------------------------------------- */
+    .utility-menu {
+        @include rem(font-size, 14px);
+        
+        }
+    
+}
+
+// 1440 and up
+@media (min-width: 90em) {
+    
+    /* Utility Menu
+    ---------------------------------------------- */
+    //.utility-menu {}
+    
+}
+
+// 1600 and up
+@media (min-width: 100em) {
+    
+    /* Utility Menu
+    ---------------------------------------------- */
+    //.utility-menu {}
+    
+}
+
+// 2100 and up
+@media (min-width: 131.25em) {
+    
+    /* Utility Menu
+    ---------------------------------------------- */
+    //.utility-menu {}
+    
+}
